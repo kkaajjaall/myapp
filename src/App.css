@@ -1,38 +1,604 @@
-.App {
-  text-align: center;
+*
+{
+    box-sizing: border-box;
+  
+    z-index: 1;
+}
+body
+{ font-family: ' Arial, sans-serif';
+ background-color:white;
+
+ 
+}
+/* ------------------------navbar style--------------- */
+.navbar-bg
+{
+ background-color:white;
+ height: 70px;
+ z-index: 99;
+ position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-brand
+{
+font-size:30px;
+margin-left: 1px;
+color: skyblue !important;
+text-shadow: 2px 2px 3px rgb(31, 173, 230)
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar li
+{
+padding:0 5px;
+}
+.navbar li a
+{
+font-size:lighter;
+font-weight: bold;
+}
+.navbar li a:hover
+{
+color: skyblue !important;
+font-weight:bolder;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn
+{
+background-color: skyblue!important;
+font-weight: bold;
+border:1px solid rgb(13, 177, 241);
+border-radius: 20px;
+width:120px;
+height:40px;
+margin-left: 5px;
+text-transform: capitalize;
 }
 
-.App-link {
-  color: #61dafb;
+.btn:hover
+{
+color:white;
+font-weight: bolder;
+border:3px solid rgb(13, 177, 241);
+box-shadow: 2px 2px 3px skyblue;
+}
+/* -------------------navbar end------------------- */
+/* -------------------header start------------------  */
+.container-main
+{
+width: 100%;
+height:max-content;
+padding:50px 0px 300px 0px;
+background-color:rgb(231, 244, 248);
+margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-left-side
+{
+ justify-content: center;
+text-align:center;
+margin-top:70px;
+height:400px;
+width:550px;
+margin-left: 30px;
+padding:50px 20px 20px 20px ;
+border-radius: 10px;
 }
+
+.display-2
+{
+font-size: 30px;
+font-weight: bolder;
+text-align: left;
+justify-content: center;
+width:max-content;
+height:5px;
+}
+
+.main-para
+{
+font-size: 16px;
+font-weight: normal;
+text-align: left;
+justify-content: center;
+width:400px;
+height:max-content;
+margin-top:90px;
+}
+.get {
+ text-align: left;
+font-weight: bolder;
+color:rgb(4, 117, 161);
+text-transform: capitalize;
+}
+.input-group
+{
+ border:skyblue;
+ width:410px;
+ border:2px solid skyblue;
+ border-radius:22px;
+ height: 30px;
+ position: absolute;
+ left:80px;
+ background-color: white;
+ }
+.rounded-pill
+{
+border:none;
+height: 25px;
+width:100px;
+}
+.now
+{  
+border:1px solid skyblue;
+background-color:skyblue;
+padding:0 8.8px;
+border-radius: 20px !important;
+}
+.img1
+{
+width:350px;
+height:350px;
+box-shadow: 15px 15px 15px skyblue;
+margin-top: 100px;
+}
+.img2
+{     
+position:absolute;
+width:200px;
+right:140px;
+height: 210px;
+box-shadow: 15px 15px 15px skyblue;
+}
+
+/* -------------------header end---------- */
+/* ----------------how it work start -------------*/
+.work-container
+{
+    background-color: #fff;
+    margin-top: 90px;
+    margin-bottom: 0px;
+    width:80%;
+    height:max-content;
+    padding: 30px;
+    position: relative;
+    bottom:260px;
+    box-shadow: 2px 2px 15px rgb(196, 232, 247);
+}
+.work-container-subdiv:hover
+{
+    transform:translateY(-10px);
+    box-shadow: 2px 2px 5px gray;
+}
+.main-heading
+{
+    font-weight: bold;
+    letter-spacing: 2px;
+    color:rgb(4, 117, 161);
+    padding:10px 0px 10px 0px;
+    text-shadow: 1px 1px 1px skyblue;
+    margin-left: 10px;
+}
+.fontawesome-style
+{
+    font-size: 30px;
+    color:skyblue;
+    padding:0px;
+    margin-top:20px;
+    margin-left: 10px;
+}
+.sub-heading
+{
+    font-weight: bold;
+    color:rgb(4, 117, 161);
+    padding:10px 0px 1px 0px;
+    margin-left: 10px;
+    
+}
+.para 
+{
+   padding: 5px 0px 10px 0px;
+   margin-left: 10px;
+ }
+
+/* ===============how it work end================ */
+
+/* =================about secstion starts=========================== */
+
+
+.about-container
+{
+    position:relative;
+    bottom:130px;
+    width:80%;
+    height:max-content;
+    padding:30px 10px;
+    justify-content: center;
+}
+
+.about-image
+{
+    width:max-content;
+    height:max-content;
+    border-radius: 10px;
+    box-shadow:10px 10px 10px skyblue;
+}
+.about-data
+{
+    text-align: left;
+    justify-content: center;
+    padding: 0px 0px 20px 200px;
+}
+.about-para
+{
+    margin-left: 10px;
+}
+.about-number
+{
+    border-radius: 50%;
+    width:10px;
+    height:30px;
+    display: grid;
+    padding:0px 10px;
+    justify-content: center;
+    border:2px solid skyblue;
+    margin-top: 10px;
+}
+.secondpart
+{ margin-top: 150px;
+}
+.about-data2
+{ 
+    text-align: left;
+    justify-content: center;
+    padding:0px 10px 0px 20px;
+    
+}
+.about-image2
+{   
+    width:max-content;
+    height:max-content;
+    border-radius: 10px;
+    box-shadow:10px 10px 10px skyblue;
+}
+/* ===========about us end============= */
+
+/*===================== money stsrt============= */
+.main-div
+{
+    margin-top: 10px;
+    height:max-content;
+    width: 300px;
+    margin-bottom: 50px;
+    margin-left: 60px;
+    padding: 20px 0px 20px 100px;
+    border: 1px solid skyblue;
+    box-shadow: 1px 1px 5px rgb(201, 231, 243);
+}
+.main-div:hover
+{
+    box-shadow: 3px 3px 15px darkgray;
+    transform: translateY(-10px);
+}
+/*  ======================money end======================*/
+/* ======================contact page start===============  */
+.contact-img
+{   border:none;
+    margin-left: 10px;
+    margin-top: 40px;
+    box-shadow: 3px 3px 15px rgb(178, 224, 241);
+}
+
+.contact-data
+{
+    margin-top: 90px;
+}
+
+.form-control
+{   font-weight: bold;
+    margin-left: 200px;
+    margin-top: 10px;
+    border:none;
+    width:60%;
+    padding: 30px;
+    box-shadow: 3px 3px 15px rgb(178, 224, 241);
+}
+
+.ip
+{
+   width: 100%;
+   border: 1px solid skyblue;
+} 
+
+.ip:hover
+{
+    box-shadow: 2px 2px 5px rgb(166, 226, 250);
+}
+/* ===========contact page end============ */
+/* ============ footrt start========== */
+
+.foot-container
+{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 30px 0px;
+    background-color:rgb(236, 248, 253);
+}
+
+ul li a
+{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+ul li
+{
+    list-style-type: none;
+    text-align: left;
+    padding: 5px 0px;
+    margin-top: 5px;
+    text-decoration: none;
+}
+
+.h66
+{
+    text-align: center;
+}
+
+.fontawesome-style:hover
+{
+    transition: all 1s;
+    animation: roatefont 1s linear alternate-reverse;
+    color:black;
+
+}
+
+@keyframes rotatefont{
+    0%{
+        transform: scale(0.6);
+    }
+    100%
+    {
+        transform: scale(1.2);
+    }
+}
+
+/* ============ footrt end========== */
+
+
+/* =================error start=============== */
+.error-container
+{
+
+    height: 70vh;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
+    
+}
+.main-error
+{   padding:100px 10px;
+    margin-top: 100px;
+    box-shadow:2px 2px 15px darkgray;
+}
+/* =================error end=============== */
+
+
+@media (max-width:500px) {
+  /* header ============== */
+
+  
+.img1
+ {
+    margin-left: 30px;
+    width: 250px;
+    height: 300px;
+ }
+
+.img2
+{
+   position:absolute;
+   right:30px;
+   width: 150px;
+   height: 170px;
+  
+}
+
+.header-left-side
+{
+  margin-left: 30px;  
+  text-align: center;  
+}
+
+.main-para
+{
+  width: 300px;
+}
+
+.input-group
+{
+   width:300px;
+   margin-left: 10px;
+   position: absolute;
+   left:20px;
+   margin-top: 10px;
+}
+.rounded-pill
+{
+   width: 100px;
+}
+.now
+{
+   padding: 0px 7.6px;
+   font-size: 10px;
+}
+
+/* ===========work section============ */
+.work-container
+{
+   margin-top: 20px;
+   width: 250px;
+   text-align: center;
+}
+
+.work-container-subdiv 
+{
+margin-left: 0px;
+margin-top: 1px;
+text-align: left;
+}
+.fontawesome-style
+{
+font-size: 20px;
+padding: 2px 0px;
+text-align: center;
+
+}
+
+/* ======================about section========= */
+.hii
+{
+width:200px;
+height: 300px;
+margin-left:0px;
+margin-top: 10px;
+padding: 0px;
+}
+
+.about-data
+{
+margin: 0px;
+padding: 0px;
+width: 350px;
+height: max-content;
+}
+
+.h6style
+{
+width: 300px;
+margin-top: 15px;
+padding: 0px;
+font-size: 12px;
+margin-left: 0px;
+}
+
+.main-heading
+{
+font-size:20px;
+letter-spacing: 1px;
+margin: 0px;
+}
+.sub-heading
+{
+font-size: 15px;
+}
+.about-number
+{
+font-size: 10px;
+width:5px;
+height:25px;
+display: grid;
+justify-content: center;
+text-align: center;
+}
+
+.about-para
+{
+width:250px;
+font-size: 12px;
+}
+.workpara 
+{
+width:150px;
+font-size: 12px;
+margin-left: 20px;
+}
+
+.btn
+{
+font-size: 10px;
+padding: 2px 3px;
+width: 70px;
+height:30px
+}
+/* ===========money==== */
+.main-div
+{
+margin-left: 30px;
+height:max-content;
+width:150px;
+text-align: left;
+justify-content: start;
+padding-left: 0px;
+margin-bottom: 0px;
+}
+.para
+{
+width:145px;
+font-size: 12px;
+}
+
+/* ==============contact=========== */
+
+.contact-data
+{
+margin-top: 1px;
+}
+.contact-img
+{
+margin-left: 0px;
+padding: 0px;
+position: relative;
+left: 0px;
+right:10px;
+margin-top: 0px;
+width: 200px;
+height: 200px;
+
+}
+
+.form-control
+{
+width:300px;
+height: max-content;
+font-size: 10px;
+margin-left: 0px;
+position: absolute;
+left:40px;
+}
+h6 
+{
+font-size:10px;
+}
+
+/* ============footer===== */
+.foot-container
+{
+margin-top: 10px;
+font-size: 10px;
+}
+/* error================= */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
